@@ -10,10 +10,7 @@ module.exports = function makeExchange(currency) {
         P = 1;
     var resultObject = {};
 
-    if (currency <= 0) {
-        return resultObject;
-    }
-    else if (currency >= 10000) {
+    if (currency >= 10000) {
         return ({ error: "You are rich, my friend! We don't have so much coins for exchange" });
     }
     else {
